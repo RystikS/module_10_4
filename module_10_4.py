@@ -23,8 +23,8 @@ class Cafe:
         self.queue = Queue()
         self.tables = tables
 
-    def guest_arrival(self, *guest):
-        for guest in guest:
+    def guest_arrival(self, *guests):
+        for guest in guests:
             guest_seat = False
             for table in self.tables:
                 if table.guest is None:
